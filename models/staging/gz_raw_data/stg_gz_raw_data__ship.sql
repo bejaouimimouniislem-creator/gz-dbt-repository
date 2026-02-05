@@ -13,10 +13,10 @@ renamed as (
         shipping_fee,
         
         logcost,
-        cast(ship_cost,FLOAT64) AS ship_cost
+        cast(ship_cost as FLOAT64) AS ship_cost
 
     from source
-   where shipping_fee <> shipping_fee_1
+   
 )
 
 select * from renamed
